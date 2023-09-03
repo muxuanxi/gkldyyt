@@ -1,0 +1,121 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* 隐藏滚动条，防止视频溢出 */
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持视频比例 */
+    z-index: -1; /* 将视频放在最底层 */
+}
+
+.MainSite {
+    height: 100%;
+    width: 100%;
+}
+
+.NavigationBar {
+    background-color: aliceblue;
+    height: 40px;
+    width: 100%;
+    display: flex; /* 使用 Flex 布局 */
+    align-items: center; /* 垂直居中按钮 */
+}
+
+/* 在导航栏按钮之间添加外边距 */
+.NavigationBar button {
+    margin-right: 10px; /* 调整按钮之间的距离 */
+}
+
+/* 导航栏按钮的样式 */
+.NavigationBar button {
+    background-color: aliceblue;
+    display: inline-block;
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 选中的导航栏按钮的样式 */
+.NavigationBar button.selected {
+    background-color: #3498db;
+    color: white;
+}
+
+/* 调整退出按钮位置 */
+.NavigationBar .box6 {
+    margin-left: auto; /* 将退出按钮推到右边 */
+    margin-right: 0; /* 取消右侧外边距 */
+}
+
+
+/* 网站主体 */
+.MainBody {
+    position: relative; /* 让内部元素定位相对于这个容器 */
+    width: 100%;
+    height: 100vh; /* 使用视窗高度作为高度，使其占据整个视窗 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* 添加半透明的背景颜色 */
+}
+
+/* 右下角图标 */
+.bottomRight {
+    position: absolute;
+    bottom: 100px;
+    right: 40px;
+    width: 100px;
+    height: 90px;
+    /* 添加图标样式 */
+}
+
+/* 左下角区域 */
+.bottomLeft {
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+    width: 100px;
+    height: 90px;
+    /* 添加图标样式 */
+}
+
+/* 左下角区域 */
+.bottomLeft {
+    position: absolute;
+    bottom: 100px;
+    left: 10px;
+    width: 560px;
+    height: 90px;
+    /* 添加图标样式 */
+}
+
+.bottomLeft1 {
+    position: absolute;
+    bottom: 70px;
+    left: 200px;
+    width: 100px;
+    height: 90px;
+    /* 添加图标样式 */
+}
+.bottomLeft2 {
+    position: absolute;
+    bottom: 30px;
+    left: 400px;
+    width: 1000px;
+    height: 90px;
+    /* 添加图标样式 */
+}
+
+
+.bottomLeft2 p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #2a9f93;
+    margin-bottom: -1000px; /* 添加底部外边距，将文本下移 */
+}
