@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>山林之乐</title>
+        <link rel="shortcut icon" href="../static/img/logo.ico">
+        <link rel="shortcut icon" href="/static/img/favicon.ico">
+        <link href="/static/css/shan.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <div>
+        <div>
+            <img src="/static/img/bei.jpg" class="Background" alt="Bei Image">
+            <div class="Characters">
+                <img src="/static/img/Characters.png" alt="">
+            </div>
+            <div class="btn_bg">
+                <img src="/static/img/page1_btn_bg.png" class="bg-image" alt="Page1_btn_bg Image">
+                <video class="video-bg" autoplay loop muted>
+                    <source src="/static/img/video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="box">
+                <img src="/static/img/top_share_box.png" alt="Top_share_box Image">
+                <p class="image-text">
+                    山林之乐正等待着您的探索，您准备好用音乐的力量与图形互动，创造出美妙的和谐了吗？在这个独特的音乐世界里，与节奏共鸣，感受山林的魅力吧！
+                </p>
+            </div>
+            <div class="but">
+                <img src="/static/img/Dow.png" title="点击下载" alt="Dow Image">
+
+            </div>
+            <div>
+                <img src="/static/img/GameRating.png" class="wei" alt="GameRating Image">
+            </div>
+            <div>
+                <img src="/static/img/page1_bg.png" class="picture" alt="Page1_bg Image">
+            </div>
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector('.but');
+
+        btn.addEventListener('click', function () {
+            window.location.href = '/static/exe/MountainMoon.zip';
+        });
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>登录</title>
+     <link rel="stylesheet" type="text/css" href="../static/css/login.css">
+      <link rel="shortcut icon" href="../static/img/logo.ico">
+</head>
+<body>
+<div class="container">
+    <h1>欢迎登录</h1>
+    <form id="login-form" action="/login" method="POST">
+        <label for="username"></label>
+        <input type="text" id="username" name="username" placeholder="用户名" required><br>
+        <label for="password"></label>
+        <input type="password" id="password" name="password" placeholder="密码" required><br>
+        <input type="submit" value="登录">
+    </form>
+    <p>
+        没有账号？<a href="../templates/register" class="toggle-link">立即注册</a>
+    </p>
+</div>
+</body>
+</html>
