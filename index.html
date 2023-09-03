@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="shortcut icon" href="/static/img/logo.ico">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+    <script type="text/javascript" href="/js/index.js"></script>
+</head>
+<body>
+<video id="video-background" autoplay muted loop>
+    <source src="/static/img/Hill.mp4" type="video/mp4">
+</video>
+<div class="MainSite">
+    <!------- 导航栏------>
+    <div class="NavigationBar">
+        <button class="box1" onclick="goToPage('index')">首页</button>
+        <button class="box2" onclick="goToPage('shan')">山林之乐</button>
+        <button class="box3" onclick="goToPage('2048')">2048</button>
+        <button class="box4" onclick="goToPage('shan')">游戏下载</button>
+        <button class="box6" onclick="goToPage('login')">退出</button>
+    </div>
+    <!---------网站主体------>
+    <div class="MainBody">
+        <!--- 右下角图标---->
+        <div class="bottomRight">
+            <img src="/static/img/GameRating.png" alt="GameRating Image">
+        </div>
+        <!--- 左下角图标---->
+        <div class="bottomLeft">
+           <img src="/static/img/unity.png" alt="Unity Image">
+
+        </div>
+        <div class="bottomLeft1">
+            <img src="../static/img/NVIDIA.png" alt=" NVIDIA Image">
+        </div>
+        <div class ="bottomLeft2">
+
+        <p>
+            联系我们：1008611 邮箱：209538907@qq.com
+            本游戏适合16岁以上的玩家进入。根据国家未成年人防沉迷规定，所有用户必须用本人身份信息进行实名登记， 未成年人将纳入防沉迷限制。 健康游戏忠告：抵制不良游戏，拒绝盗版游戏。 注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。 合理安排时间，享受健康生活。
+            本公司积极履行《网络游戏行业防沉迷自律公约》
+        </p>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+    // JavaScript 代码直接嵌入在页面中
+    function goToPage(pageName) {
+        window.location.href = pageName;
+    }
+</script>
+</body>
+</html>
